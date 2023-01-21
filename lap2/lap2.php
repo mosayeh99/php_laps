@@ -35,7 +35,7 @@ $arr2 = array(
 echo '<br>';
 echo 'ascending order sort by value:';
 echo '<pre>';
-sort($arr2);
+asort($arr2);
 print_r($arr2);
 echo '</pre>';
 
@@ -47,7 +47,7 @@ echo '</pre>';
 
 echo 'descending order sorting by Value:';
 echo '<pre>';
-rsort($arr2);
+arsort($arr2);
 print_r($arr2);
 echo '</pre>';
 
