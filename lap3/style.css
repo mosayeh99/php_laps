@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+form {
+    max-width: 500px;
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form > div {
+    position: relative;
+}
+
+form p {
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
+
+form .required {
+    color: red;
+}
+
+form input[type="text"]{
+    width: 100%;
+    height: 35px;
+    padding: 5px 10px;
+    outline: 0;
+    border: 0;
+    background-color: #eee;
+    border-radius: 2px;
+}
+
+form textarea {
+    width: 100%;
+    resize: none;
+    height: 60px;
+    border: 0;
+    background-color: #eee;
+    border-radius: 2px;
+    outline: 0;
+    padding: 10px;
+}
+
+form .gender {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 10px;
+}
+
+form .courses {
+    max-width: 200px;
+    width: 100%;
+}
+
+form .courses .courses-select {
+    position: relative;
+}
+
+form .courses .courses-select select {
+    max-width: 200px;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 2px;
+    outline: 0;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 1em;
+}
+
+.overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+form .courses .courses-checkbox {
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    height: 94px;
+    overflow-y: auto;
+}
+
+form .courses .courses-checkbox label {
+    padding: 6px 10px;
+    transition: 0.3s linear;
+}
+
+form .courses .courses-checkbox label:hover {
+    background-color: #ccc;
+}
+
+form .courses .courses-checkbox label:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+}
+
+form input[type="submit"] {
+    padding: 10px;
+    border: 0;
+    background-color: dodgerblue;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 2px;
+}
+
+.data {
+    max-width: 500px;
+    width: 100%;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+.data .info {
+    display: flex;
+}
+
+.data .info:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+}
+
+.data .info h4 {
+    flex: 1;
+    border-right: 1px solid #ccc;
+    padding: 10px;
+}
+
+.data .info p {
+    flex: 2;
+    padding: 10px;
+}

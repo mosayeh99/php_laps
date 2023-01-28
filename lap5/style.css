@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #222222;
+    --secondary-color: #1e90ff;
+    --background-color: #eee;
+    --link-hover-color: #777;
+    --text-color-in-dark: #777;
+    --text-color-in-light: #777;
+    --caret-color: #777;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+input {
+    outline: 0;
+    caret-color: var(--caret-color);
+}
+
+.note {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.logform , .regform {
+    display :flex ;
+    justify-content: center;
+}
+
+.login , .signup {
+    margin: 50px 0;
+    max-width: 400px;
+    width: 100%;
+}
+
+.user , .pass ,.newPass , .fname , .lname {
+    height : 50px ;
+    width: 100%;
+    border: 1px solid var(--main-color);
+    margin :10px 0;
+    padding-left: 10px;
+}
+
+#form-tag-head {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.error-msg {
+    width: 100%;
+    border: 1px solid red;
+    padding: 10px;
+    color: red;
+}
+
+.logform .login #logBtn,
+.regform .signup #signupBtn{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0 5px;
+    cursor: pointer;
+    border: 0;
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: 16px;
+}
+
+.regform .signup > input {
+    margin: 2px 0 20px;
+}
+
+.regform .signup .signup-pass-field input {
+    margin: 2px 0 5px;
+}
+
+#passhint {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+#forget, #return {
+    cursor: pointer;
+    color: var(--secondary-color);
+}
+
+#RegisterNow,
+#loginNow {
+    text-decoration: none;
+    cursor:pointer;
+    color :var(--secondary-color);
+}
+
+/* Home style */
+.home-main-div {
+    width: 500px;
+    margin: 100px auto;
+}
+
+.home-welcome-msg {
+    text-align: center;
+    font-size: 30px;
+}
+
+.home-logout-link {
+    display: block;
+    width: 200px;
+    margin: 50px auto 0;
+    text-decoration: none;
+    padding: 12px;
+    background-color: var(--secondary-color);
+    text-align: center;
+    color: white;
+    font-size: 16px;
+}
